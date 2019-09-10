@@ -1,0 +1,401 @@
+    .top-nav {
+        position: relative;
+        z-index: 103;
+        height: 30px;
+        line-height: 27px;
+        background-color: #f5f5f5;
+        color: #777;
+    }
+    
+    .width_b {
+        width: 100%;
+    }
+    
+    .bx {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    .head-inner {
+        width: 1000px;
+        margin: 0 auto;
+        position: relative;
+        clear: both;
+    }
+    
+    .top-nav-tool li {
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .top-nav-tool li span {
+        color: #666;
+    }
+    
+    .top-nav-tool {
+        float: right
+    }
+    
+    .top-nav-tool li i {
+        color: #666;
+        margin-left: 15px;
+    }
+    
+    .head-logo {
+        height: 100px;
+        background-color: #fff;
+    }
+    
+    .head-logo .head-inner {
+        z-index: 102;
+    }
+    
+    .head-cart {
+        display: inline;
+        position: relative;
+        z-index: 9;
+        float: right;
+        margin-top: 33px;
+        margin-left: 15px;
+        width: 96px;
+    }
+    
+    .tool {
+        position: relative;
+        z-index: 1;
+        padding-right: 0px;
+        padding-left: 40px;
+        width: 99px;
+        height: 32px;
+        line-height: 32px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: #f6f7f9;
+        border-radius: 2px;
+    }
+    
+    .tool a {
+        color: #333;
+        font-size: 12px;
+    }
+    
+    .tool .ico-bag {
+        background-image: url(https://shop.vipstatic.com/img/common/header/sprites-hash-b45bfef8.png?b3c54ac4);
+        background-position: -114px -208px;
+        width: 12px;
+        height: 17px;
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        z-index: 1;
+    }
+    
+    .tool .ico-spc {
+        width: 36px;
+    }
+    
+    .c-search {
+        display: inline;
+        float: right;
+        position: relative;
+        margin-top: 33px;
+        width: 391px;
+    }
+    
+    .c-search-form {
+        position: relative;
+        z-index: 2;
+        width: 387px;
+        height: 32px;
+        border: 2px solid #fa2a83;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+    
+    .c-search-input {
+        padding: 2px 12px;
+        width: 311px;
+        height: 28px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #333;
+        border: none;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        background-color: #fff;
+    }
+    
+    .c-search-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-top: 6px;
+        width: 53px;
+        height: 28px;
+        text-align: center;
+        background-color: #fa2a83;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    .c-search-icon {
+        background-image: url(https://shop.vipstatic.com/img/common/header/sprites-hash-b45bfef8.png?b3c54ac4);
+        background-position: -72px -208px;
+        width: 19px;
+        height: 22px;
+        display: inline-block;
+    }
+    
+    .c-search .c-search-hotwords-list {
+        height: 20px;
+        overflow: hidden;
+        margin: 2px;
+    }
+    
+    .c-search .c-search-hotwords-list li {
+        display: inline-block;
+        margin-right: 6px;
+        color: #999;
+    }
+    
+    .c-search .c-search-hotwords-list li a {
+        color: #999;
+    }
+    
+    .c-search .c-search-hotwords-list li span {
+        margin: 6px;
+        color: #ccc;
+    }
+    
+    .c-service {
+        display: inline;
+        position: relative;
+        z-index: 1;
+        width: 304px;
+        height: 100px;
+    }
+    
+    .is-service-on-left {
+        float: left;
+    }
+    
+    .c-service-link img {
+        width: 304px;
+        height: 100px;
+    }
+    
+    .c-logo {
+        display: inline;
+        position: relative;
+        float: left;
+        z-index: 1;
+        margin-right: 1px;
+        min-width: 140px;
+        height: 100px;
+    }
+    
+    .header-logo-dop {
+        margin-left: -20px;
+        min-width: 160px;
+        overflow: hidden;
+    }
+    
+    .header a {
+        text-decoration: none;
+        vertical-align: top;
+    }
+    
+    .c-logo .header-logo-dop {
+        width: 160px;
+        height: 100px;
+    }
+    
+    .main-nav {
+        clear: both;
+        *zoom: 1;
+        position: relative;
+        height: 43px;
+        line-height: 43px;
+        background-color: #fff;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .main-nav-link .nav-category {
+        background-color: #f10180;
+        width: 156px;
+        height: auto;
+        margin-right: 20px;
+    }
+    
+    .main-nav-link .nav-category .main-nav-atag {
+        color: #fff;
+        height: 43px;
+    }
+    
+    .main-nav-link li .main-nav-atag {
+        display: block;
+        _height: auto;
+        padding: 0 10px;
+        text-align: center;
+        color: #333;
+        _width: 80px;
+        _padding: 0;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .main-nav-link>li {
+        float: left;
+        position: relative;
+        z-index: 8;
+        height: 43px;
+    }
+    
+    .main-nav-link li .main-nav-atag.nav_current {
+        cursor: default;
+        font-weight: 700;
+        color: #f10180;
+    }
+    /* 头部结束 */
+    
+    .index-content .bg-banner {
+        background: url(http://a.vpimg2.com/upload/flow/2019/08/12/132/15655917445939.jpg) center 28px no-repeat;
+    }
+    
+    .focus-banner {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        position: relative;
+        _height: 392px;
+        margin-bottom: 10px;
+    }
+    
+    .focus-banner-con-wrq {
+        padding: 12px;
+        padding-bottom: 0;
+        background: #fff;
+        background: rgba(255, 255, 255, .86);
+        width: 976px;
+        position: relative;
+        margin: 0 auto;
+        box-shadow: 0 1px 3px rgba(167, 167, 167, .4);
+    }
+    /* 商品 */
+    
+    .mst-ued-product-lc-title {
+        width: 100%;
+        height: 142px;
+    }
+    
+    .mst-ued-product-lc-title img {
+        height: 100%;
+    }
+    
+    .mst-ued-product-lc-item {
+        width: 226px;
+        height: 461px;
+        float: left;
+        border: 1px solid #e0e0e0;
+        background-color: #fff;
+        margin: 16px 0 0 16px;
+    }
+    
+    .mst-ued-product-lc-img-wrap {
+        display: block;
+        height: 286px;
+        position: relative;
+    }
+    
+    .mst-ued-product-lc-img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .mst-ued-product-lc-desc {
+        font-size: 12px;
+        display: block;
+    }
+    
+    .mst-ued-product-lc-price-desc {
+        font-size: 0;
+        height: 114px;
+    }
+    
+    .mst-ued-product-lc-promotion {
+        padding: 0 14px 0 15px;
+        font-size: 14px;
+        height: 33px;
+        background-image: -webkit-linear-gradient(0deg, #f10180 0%, #fe3b07 100%);
+        background-image: linear-gradient(90deg, #f10180 0%, #fe3b07 100%);
+        font-family: arial;
+        color: #fff;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+    .mst-ued-product-lc-promotion .ued-text {
+        line-height: 37px;
+        margin-right: 7px;
+    }
+    
+    .mst-ued-product-lc-promotion .ued-money-icon {
+        font-size: 16px;
+        line-height: 39px;
+        margin-right: 2px;
+    }
+    
+    .mst-ued-product-lc-promotion .ued-price {
+        line-height: 34px;
+        font-size: 24px;
+        margin-right: 2px;
+    }
+    
+    .mst-ued-product-lc-discount {
+        font-size: 14px;
+        overflow: hidden;
+        display: block;
+        padding-left: 15px;
+    }
+    
+    .mst-ued-product-lc-discount .ued-vip-text {
+        margin-right: 4px;
+        color: #666;
+    }
+    
+    .mst-ued-product-lc-discount {
+        font-size: 14px;
+        overflow: hidden;
+        display: block;
+        padding-left: 15px;
+    }
+    
+    .mst-ued-product-lc-name {
+        color: #333;
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        display: -webkit-box;
+        overflow: hidden;
+        height: 40px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    
+    .mst-ued-product-lc-btn-like {
+        border: 1px solid #f10180;
+        text-align: center;
+        line-height: 28px;
+        color: #f10180;
+        font-size: 14px;
+        border-radius: 2px;
+    }
+    
+    .header .head-inner .top-nav-tool .top-nav-top-gif {
+        margin-bottom: 6px;
+    }
+    
+    .mst-ued-ul img {
+        width: 100%;
+    }

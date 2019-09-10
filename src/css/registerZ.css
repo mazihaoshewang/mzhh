@@ -1,0 +1,97 @@
+    .c-header-inner {
+        position: relative;
+        z-index: 1;
+        margin-right: auto;
+        margin-left: auto;
+        width: 1000px;
+        height: 100px;
+        zoom: 1;
+    }
+    
+    .c-logo-link {
+        background-image: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-6954197b.png?5a6693d5);
+        background-position: -308px -57px;
+        width: 125px;
+        height: 100px;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 500px;
+        overflow: hidden;
+    }
+    
+    .c-service {
+        background-image: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-6954197b.png?5a6693d5);
+        background-position: 0 0;
+        width: 304px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    .c-body {
+        height: 650px;
+        background: url(https://a.vpimg2.com/upload/flow/2019/01/29/88/15487540172274.jpg) center 0px no-repeat;
+    }
+    
+    .c-footer {
+        margin-right: auto;
+        margin-left: auto;
+        width: 1000px;
+        height: 78px;
+        line-height: 78px;
+    }
+    
+    .c-copyright {
+        color: #666;
+        text-align: center;
+    }
+    /* 登录框 */
+    
+    .c-register-title {
+        font-size: 18px;
+        color: #666;
+    }
+    
+    .c-register-switch-login {
+        float: right;
+        font-size: 14px;
+    }
+    
+    .c-register-header {
+        padding-right: 30px;
+        padding-left: 30px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #e0e0e0;
+        overflow: hidden;
+    }
+    
+    .c-register {
+        width: 360px;
+        border-radius: 2px;
+        background-color: #fff;
+        float: right;
+        position: relative;
+        right: 55px;
+    }
+    
+    .form-dz input {
+        padding-left: 40px;
+        width: 248px;
+        height: 32px;
+        line-height: 32px;
+    }
+    
+    .form-dz p {
+        width: 248px;
+        height: 32px;
+        line-height: 32px;
+        padding-bottom: 80px;
+        margin: 0 auto
+    }
+    
+    .c-register-title a {
+        margin-left: 135px;
+    }

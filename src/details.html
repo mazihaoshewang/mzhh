@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>卖月饼了！</title>
+</head>
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/louti.css">
+<link rel="stylesheet" href="css/details.css">
+<script src="js/cookie.js"></script>
+<style>
+    ul,
+    li {
+        list-style: none
+    }
+    
+    img {
+        border: 0;
+        outline: 0
+    }
+    
+    .imgdet {
+        position: relative;
+        height: 460px;
+        width: 548px;
+        margin: 100px auto 0;
+        background: #fff
+    }
+    
+    .imgdet .imglist {
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 84px;
+        height: 100%;
+        overflow: hidden
+    }
+    
+    .imgdet .imglist ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 0
+    }
+    
+    .imgdet .imglist ul li {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #fff;
+        margin-bottom: 10px
+    }
+    
+    .imgdet .imglist ul li:last-of-type {
+        margin-bottom: 0
+    }
+    
+    .imgdet .imglist ul .active {
+        border: 2px solid red
+    }
+    
+    .imgdet .imglist ul li img {
+        width: 100%;
+        height: 100%
+    }
+    
+    .imgdet .imgpart {
+        vertical-align: top;
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        width: 460px;
+        height: 460px
+    }
+    
+    .imgdet .imgpart .pic {
+        position: relative;
+        width: 100%;
+        height: 100%
+    }
+    
+    .imgdet .imgpart .pic .magnify {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 200px;
+        cursor: move;
+        background-color: #fff;
+        opacity: .3;
+        filter: alpha(opacity=30)
+    }
+    
+    .imgdet .imgpart .pic img {
+        width: 100%;
+        height: 100%
+    }
+    
+    .imgdet .imgpart .bigpic {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -470px;
+        width: 460px;
+        height: 460px;
+        z-index: 11;
+        border: 1px solid #fff;
+        overflow: hidden
+    }
+    
+    .imgdet .imgpart .bigpic>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 920px;
+        height: 920px
+    }
+</style>
+
+<body>
+    <!-- 头部开始 -->
+    <div class="header">
+        <div class="top-nav">
+            <div class="head-inner">
+                <ul class="top-nav-tool">
+                    <li><a href="http://localhost/xm/src/SigninD.html"><span>请登录</span></a><i>/</i></li>
+                    <li><a href="http://localhost/xm/src/registerZ.html"><span>注册</span></a><i>/</i></li>
+                    <li><a href=""><span><img src="https://shop.vipstatic.com/img/common/header_sign-hash-0459d02c.gif?3c0ef42f" alt="" class="top-nav-top-gif"> 签到有礼</span></a><i>/</i></li>
+                    <li><a href=""><span>我的订单</span></a><i>/</i></li>
+                    <li><a href=""><span>我的特卖</span></a><i>/</i></li>
+                    <li><a href=""><span>会员俱乐部</span></a><i>/</i></li>
+                    <li><a href=""><span>客户服务</span></a><i>/</i></li>
+                    <li><a href=""><span>手机版</span></a><i>/</i></li>
+                    <li><a href=""><span>更多</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- logo图 -->
+        <div class="head-logo">
+            <div class="head-inner ">
+                <div class="head-cart">
+                    <a href="http://localhost/xm/src/ShoppingCart.html">
+                        <div class="tool">
+
+                            <!-- 图片网络路径 -->
+                            <span class="ico-bag"></span>
+                            <span class="ico-spc">购物车</span>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 输入框+搜索按钮 -->
+                <div class="c-search">
+                    <div class="c-search-form">
+                        <input type="text" class="c-search-input">
+                        <a href="" class="c-search-button"><span class="c-search-icon"></span></a>
+                    </div>
+                    <div class="J-search-hotwords-content">
+                        <ul class="c-search-hotwords-list J_search_hotwords_list">
+                            <li><a href="">连衣裙</a><span>|</span></li>
+                            <li><a href="">女式套装</a><span>|</span></li>
+                            <li><a href="">女式T恤</a><span>|</span></li>
+                            <li><a href="">女式衬衫</a><span>|</span></li>
+                            <li><a href="">女休闲鞋</a><span>|</span></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-service">
+                    <!-- 图片网络路径 -->
+                    <a href="" class="c-service-link"><img src="https://b.appsimg.com/upload/momin/2019/06/24/19/1561344075509.png" alt=""></a>
+                </div>
+                <div class="c-logo">
+                    <div class="header-logo-dop">
+                        <a href="http://localhost/xm/src/"><img src="https://b.appsimg.com/upload/momin/2019/02/21/133/1550737570483.png" alt="" class="width_b"></a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 头部第二个导航 -->
+            <div class="min-nav">
+                <div class="main-nav">
+                    <div class="head-inner">
+                        <ul class="main-nav-link">
+                            <li class=" nav-category ">
+                                <a href=" " class="main-nav-atag "><img src="https://b.appsimg.com/upload/momin/2018/09/10/150/1536548648745.png" alt=""> 商品分类</a>
+                            </li>
+                            <li><a href="index.html" class="main-nav-atag nav_current">首页</a></li>
+                            <li><a href=" " class="main-nav-atag">最后疯抢</a></li>
+                            <li><a href=" " class="main-nav-atag">唯品快抢</a></li>
+                            <li><a href=" " class="main-nav-atag">女装</a></li>
+                            <li><a href=" " class="main-nav-atag">母婴</a></li>
+                            <li><a href=" " class="main-nav-atag">家电</a></li>
+                            <li><a href=" " class="main-nav-atag">国际</a></li>
+                            <li><a href=" " class="main-nav-atag">美妆</a></li>
+                            <li><a href=" " class="main-nav-atag">鞋包</a></li>
+                            <li><a href=" " class="main-nav-atag">男装</a></li>
+                            <li><a href=" " class="main-nav-atag">预告</a></li>
+                            <li><a href=" " class="main-nav-atag">更多</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <!-- 内容 -->
+    <div class="FW-wrap">
+        <!-- 产品轮播 -->
+        <div class="FW-product">
+            <div class="mp-license-score-wrap">
+                <div class="mp-score-hover">
+                    <a href="" class="mp-title-txt">
+                        <img src="https://a.vpimg2.com/upload/mpsmc/2018/07/20/47/1532052115882_primary.png" alt="" class="mp-logo">
+                        <span class="mp-title-storename">稻香村</span>
+                        <span class="mp-title-type">旗舰店</span>
+                    </a>
+                    <div class="mp-score-wrap">
+                        <div class="mp-score-content">
+                            <span class="score-content-type">描述</span>
+                            <span class="score-content-score">&nbsp;4.7</span>
+                        </div>
+                        <div class="mp-score-content">
+                            <span class="score-content-type">服务</span>
+                            <span class="score-content-score">&nbsp;4.8</span>
+                        </div>
+                        <div class="mp-score-content">
+                            <span class="score-content-type">物流</span>
+                            <span class="score-content-score">&nbsp;4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="imgdet wrap">
+                    <div class="imglist">
+                        <ul>
+                            <!-- <li class="active">
+                                <img src="./images/0001.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/0002.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/0003.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/0004.png" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/0005.png" alt="">
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="imgpart">
+                        <div class="pic">
+                            <img src="" alt="">
+                            <div class="magnify"></div>
+                        </div>
+
+                        <div class="bigpic">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 产品信息 -->
+        <div class="M-productInfo">
+            <div class="product-content-inner">
+                <div class="pi-title-box">
+                    <div class="pib-title">
+                        <p class="pib-title-class">稻香村</p>
+                        <span class="pib-vendor-tag">商家直营</span>
+                        <p class="pib-title-detail">稻香村老月饼400g中秋月饼礼盒团购批发京式五仁月饼糕点点心</p>
+                        <!-- 放大镜 -->
+                        <!-- <div class="imgdet wrap">
+                            <div class="imglist">
+                                <ul>
+                                   
+                                </ul>
+                            </div>
+                            <div class="imgpart">
+                                <div class="pic">
+                                    <img src="" alt="">
+                                    <div class="magnify"></div>
+                                </div>
+
+                                <div class="bigpic">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <div class="pi-price-box">
+                        <div class="spcecialPrice-box">
+                            <div class="sp-info">
+                                <span class="sp-title">价格</span>
+                                <i class="pbox-yen">￥</i>
+                                <span class="sp-price">22</span>
+                                <span class="sp-postfix">起</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pi-price-box">
+                    <dl class="i-num">
+                        <dt class="num-name">数量</dt>
+                        <dd class="ui-quantity num-box">
+                            <input type="number" value="1">
+                        </dd>
+                    </dl>
+                </div>
+                <div class="i-button">
+                    <div class="button-box">
+                        <button class="ui-btn-large">
+                          <span class="ui-btn-loading-before">
+                           <i class="vipFont"> 加入购物车</i>
+                          </span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/louti.js"></script>
+    <script src="js/detailsxr.js"></script>
+    <script src="js/fd.js"></script>
+</body>
